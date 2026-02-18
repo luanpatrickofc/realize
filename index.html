@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Realize – Passagens Aéreas Baratas</title>
 
   <style>
@@ -27,35 +27,14 @@
       opacity: 0.9;
     }
 
-    .box {
+    .container {
       background: white;
       margin: 30px auto;
-      padding: 30px;
+      padding: 20px;
       border-radius: 12px;
-      max-width: 500px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 1000px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       color: black;
-    }
-
-    input, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      font-size: 16px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      background: #1e88e5;
-      color: white;
-      border: none;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background: #1565c0;
     }
 
     footer {
@@ -67,42 +46,18 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>✈️ Realize</h1>
-    <p>Encontre passagens aéreas promocionais pelo menor preço</p>
+    <p>Busque passagens aéreas promocionais pelo menor preço</p>
   </header>
 
-  <div class="box">
-    <h2>Buscar voos baratos</h2>
-
-    <input type="text" id="origem" placeholder="Cidade de origem">
-    <input type="text" id="destino" placeholder="Destino">
-
-    <button onclick="buscarVoos()">Pesquisar passagens</button>
+  <div class="container">
+    <!-- WIDGET COMPLETO DE BUSCA DE VOOS (TRAVELPAYOUTS) -->
+    <script async src="https://tp.media/content?currency=brl&trs=12120&shmarker=12120&locale=pt&powered_by=true&border_radius=8&plain=true&color_button=%231e88e5&promo_id=7873" charset="utf-8"></script>
   </div>
 
   <footer>
-    © 2026 Realize – Comparador de passagens
+    © 2026 Realize – Comparador de passagens aéreas
   </footer>
-
-  <script>
-    function buscarVoos() {
-      const origem = document.getElementById("origem").value;
-      const destino = document.getElementById("destino").value;
-
-      if (!origem || !destino) {
-        alert("Preencha origem e destino.");
-        return;
-      }
-
-      // SEU LINK DE AFILIADO
-      const linkBase = "https://aviasales.tpo.mx/qXc2i4U0";
-
-      // abre o site afiliado em nova aba
-      window.open(linkBase, "_blank");
-    }
-  </script>
-
 </body>
 </html>
