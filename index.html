@@ -100,25 +100,14 @@
   </footer>
 
   <script>
-    function buscarPassagens() {
-      const origem = document.getElementById("origem").value.trim().toLowerCase();
-      const destino = document.getElementById("destino").value.trim().toLowerCase();
-      const data = document.getElementById("data").value;
-
-      if (!origem || !destino || !data) {
-        alert("Preencha origem, destino e data.");
-        return;
-      }
-
-      const dataFormatada = data.split("-").reverse().join("");
-
-      const skyscanner = `https://www.skyscanner.com.br/transport/flights/${origem}/${destino}/${dataFormatada}/`;
-      const kayak = `https://www.kayak.com.br/flights/${origem}-${destino}/${data}`;
-      const decolar = `https://www.decolar.com/passagens-aereas/${origem}/${destino}`;
-
-      window.open(skyscanner, "_blank");
-      window.open(kayak, "_blank");
-      window.open(decolar, "_blank");
+    <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
+  (function () {
+      var script = document.createElement("script");
+      script.async = 1;
+      script.src = 'https://emrld.cc/NDk5ODAx.js?t=499801';
+      document.head.appendChild(script);
+  })();
+</script>
     }
   </script>
 
